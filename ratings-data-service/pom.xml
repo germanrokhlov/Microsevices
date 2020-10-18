@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>german.ms</groupId>
-	<artifactId>rating-info-service</artifactId>
+	<artifactId>rating-data-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>rating-info-service</name>
+	<name>rating-data-service</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
