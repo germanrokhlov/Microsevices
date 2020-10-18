@@ -6,14 +6,14 @@ public class CatalogItem {
     private int movieId;
     private String name;
     private String desc;
-    private int rating;
+    private double rating;
 
     public CatalogItem(String userId, int movieId) {
         this.userId = userId;
         this.movieId = movieId;
     }
 
-    public CatalogItem(String userId, int movieId, String name, String desc, int rating) {
+    public CatalogItem(String userId, int movieId, String name, String desc, double rating) {
         this.userId = userId;
         this.movieId = movieId;
         this.name = name;
@@ -55,11 +55,11 @@ public class CatalogItem {
         this.desc = desc;
     }
 
-    public int getRating() {
+    public double getRating() {
         return rating;
     }
 
-    public void setRating(int rating) {
+    public void setRating(double rating) {
         this.rating = rating;
     }
 }

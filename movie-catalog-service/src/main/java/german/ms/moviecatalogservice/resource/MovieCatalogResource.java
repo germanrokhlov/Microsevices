@@ -41,7 +41,7 @@ public class MovieCatalogResource {
                 Ratings rating = restTemplate.getForObject("http://rating-info-service/ratings/" + item.getMovieId(), Ratings.class);
                 MovieInfo movie =  restTemplate.getForObject("http://movie-info-service/movies/" + item.getMovieId(), MovieInfo.class);
                 System.out.println(movie);
-                CatalogItem theItem = new CatalogItem(userId, item.getMovieId(), movie.getName(), movie.getDesc(), rating.getRating());
+                CatalogItem theItem = new CatalogItem(userId, movie.getMovieId(), movie.getName(), movie.getDesc(), rating.getRating());
                 listOfMoviesById.add(theItem);
             }
         }
