@@ -6,6 +6,7 @@ import german.ms.moviecatalogservice.model.CatalogItem;
 import german.ms.moviecatalogservice.model.MovieInfo;
 import german.ms.moviecatalogservice.model.Ratings;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
